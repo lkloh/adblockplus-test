@@ -11,10 +11,10 @@ from selenium.common.exceptions import NoSuchElementException
 
 profile = ""
 if (platform.system()=='Linux'):
+    print 'Linux profile!'
     profile = 'extension/firefox_profiles/linux_profile.default'
 elif (platform.system()=='Darwin'):
     profile = 'extension/firefox_profiles/macos_profile.default'
-
 fp = webdriver.FirefoxProfile(profile)
 fp.set_preference("signatures.required", False)
 fp.set_preference('browser.helperApps.neverAsk.accept', True)
@@ -22,6 +22,7 @@ extension = 'extension/firefox/adblock_plus_easylist.xpi'
 fp.add_extension(extension)
 
 driver = webdriver.Firefox(firefox_profile=fp)
+print 'driver started'
 
 driver.get('https://www.google.com/')
 time.sleep(5)

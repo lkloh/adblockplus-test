@@ -7,7 +7,14 @@ from selenium.webdriver.common.proxy import *       # for proxy settings
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
 
-
+proxy = 'proxy.pdl.cmu.edu:8080'
+sproxy = Proxy({
+    'proxyType': ProxyType.MANUAL,
+    'httpProxy': proxy,
+    'ftpProxy': proxy,
+    'sslProxy': proxy,
+    'noProxy': '' # set this value as desired
+})
 
 profile = ""
 if (platform.system()=='Linux'):
@@ -21,7 +28,7 @@ fp.set_preference('browser.helperApps.neverAsk.accept', True)
 extension = 'extension/firefox/adblock_plus_easylist.xpi'
 fp.add_extension(extension)
 
-driver = webdriver.Firefox(firefox_profile=fp)
+driver = webdriver.Firefox(proxy=sproxy, firefox_profile=fp)
 print 'driver started'
 
 driver.get('https://www.google.com/')

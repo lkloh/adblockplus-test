@@ -1,0 +1,11 @@
+accounts.firefox.com:HSTS	0	16938	1479056257297,1,1
+www.google-analytics.com:HSTS	0	16938	1474390653665,1,0
+apis.google.com:HSTS	0	16939	1474498086030,1,0
+services.addons.mozilla.org:HSTS	1	16939	1495147421817,1,0
+support.mozilla.org:HPKP	0	16939	1464908398796,1,0,r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=
+support.mozilla.org:HSTS	0	16939	1495148398795,1,0
+stats.g.doubleclick.net:HSTS	1	16939	1474498061039,1,0
+support.cdn.mozilla.net:HPKP	0	16939	1464908399522,1,0,r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=
+blocklist.addons.mozilla.org:HSTS	1	16939	1495147541865,1,0
+input.mozilla.org:HPKP	0	16939	1464908424150,1,0,r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=
+self-repair.mozil
